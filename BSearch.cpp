@@ -1,18 +1,20 @@
+//akishere
+//Binary Search Algorithm Simplified
 #include<iostream>
 using namespace std;
 
 int main()
 {
 	int arr[100], n, i, f, l, search, middle;
-	cout<<"Enter size of array"<<endl;
+	cout<<"Enter size of array"<<endl; //Take input for the size of array
 	cin>>n;
-	cout<<"Enter"<<n<<"elements"<<endl;
+	cout<<"Enter"<<n<<"elements"<<endl; //Take input of elements
 	for(i=0;i<n;i++)
 	{
 	
 		cin>>arr[i];
 	}
-	cout<<"Enter number to search"<<endl;
+	cout<<"Enter number to search"<<endl; //Enter number to be searched for
 	cin>>search;
 	f=0;
 	l=n-1;
@@ -21,7 +23,7 @@ int main()
 	{
 		if(search== arr[middle])
 		{
-			cout<<"Element found at position"<<middle+1;
+			cout<<"Element found at position"<<middle+1; //If element found, print it
 			break;
 		}
 		else if(search < arr[middle])
@@ -37,7 +39,7 @@ int main()
 	}
 	if(f>l)
 	{
-		cout<<"Element not found"<<endl;
+		cout<<"Element not found"<<endl; //If element is not found
 	}
 	
 }
